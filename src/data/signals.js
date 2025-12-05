@@ -1,0 +1,91 @@
+// Mock signals database
+const signals = [
+  {
+    id: '1',
+    pair: 'EUR/USD',
+    type: 'BUY',
+    entry: 1.0850,
+    stopLoss: 1.0800,
+    takeProfit: [1.0900, 1.0950, 1.1000],
+    status: 'active',
+    risk: 'medium',
+    timeframe: 'H4',
+    description: 'شکست مقاومت مهم - روند صعودی قوی',
+    hasImage: true,
+    imageUrl: 'https://via.placeholder.com/800x400/1a1a2e/16db93?text=EUR/USD+BUY+Signal',
+    createdAt: '2024-01-15T10:30:00Z',
+    pips: null,
+    result: null
+  },
+  {
+    id: '2',
+    pair: 'GBP/JPY',
+    type: 'SELL',
+    entry: 188.50,
+    stopLoss: 189.20,
+    takeProfit: [187.80, 187.00, 186.20],
+    status: 'active',
+    risk: 'high',
+    timeframe: 'H1',
+    description: 'واگرایی نزولی در RSI - انتظار اصلاح',
+    hasImage: false,
+    imageUrl: null,
+    createdAt: '2024-01-15T09:15:00Z',
+    pips: null,
+    result: null
+  },
+  {
+    id: '3',
+    pair: 'XAU/USD',
+    type: 'BUY',
+    entry: 2025.50,
+    stopLoss: 2015.00,
+    takeProfit: [2040.00, 2055.00, 2070.00],
+    status: 'closed',
+    risk: 'low',
+    timeframe: 'D1',
+    description: 'حمایت قوی در سطح فیبوناچی ۶۱.۸٪',
+    hasImage: true,
+    imageUrl: 'https://via.placeholder.com/800x400/1a1a2e/f9d923?text=GOLD+BUY+Signal',
+    createdAt: '2024-01-14T14:00:00Z',
+    pips: 145,
+    result: 'profit'
+  },
+  {
+    id: '4',
+    pair: 'USD/CAD',
+    type: 'SELL',
+    entry: 1.3450,
+    stopLoss: 1.3510,
+    takeProfit: [1.3380, 1.3320],
+    status: 'closed',
+    risk: 'medium',
+    timeframe: 'H4',
+    description: 'الگوی سر و شانه - سیگنال نزولی',
+    hasImage: true,
+    imageUrl: 'https://via.placeholder.com/800x400/1a1a2e/e94560?text=USD/CAD+SELL+Signal',
+    createdAt: '2024-01-13T16:45:00Z',
+    pips: -60,
+    result: 'loss'
+  },
+  {
+    id: '5',
+    pair: 'BTC/USD',
+    type: 'BUY',
+    entry: 42500,
+    stopLoss: 41000,
+    takeProfit: [44000, 46000, 48000],
+    status: 'active',
+    risk: 'high',
+    timeframe: 'D1',
+    description: 'شکست مثلث صعودی - هدف بلندمدت',
+    hasImage: true,
+    imageUrl: 'https://via.placeholder.com/800x400/1a1a2e/9b59b6?text=BTC+BUY+Signal',
+    createdAt: '2024-01-15T08:00:00Z',
+    pips: null,
+    result: null
+  }
+];
+
+module.exports = signals;
+
